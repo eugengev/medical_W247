@@ -1,0 +1,48 @@
+https://slides.com/frostdm/deck/edit
+http://slides.com/frostdm/deck/live#/
+
+Сборка проекта 
+
+	Консоль(Conemu,Cmder,Git Bash, Git Shell, Power Shell)
+
+	устанавлюемо глобально npm,gulp,bower
+		Node.js (https://nodejs.org/)
+		Bower(npm install -g bower)
+		Gulp (npm install --global gulp)
+
+	Создаем файл конфигураций (touch bower.json package.json .bowerrc)
+
+		package.json(
+			{
+			  "name": "start",
+			  "version": "0.1.0",
+			  "devDependencies": {
+
+			 }
+	  	)
+		bower.json(
+			{
+			  "name": "start",
+			  "version": "0.1.0",
+			  "dependencies": {	   
+			  }
+			}
+		)
+		bowerrc(
+			{
+				"directory": "app/bower_components"
+			}
+		)
+
+		установка библиотеки через bower(http://bower.io/)
+		например
+
+		bower install --save jquery#1.9
+
+		установка плагинов для gulp(http://gulpjs.com/plugins/)
+
+		npm intall --save-dev gulp 
+
+
+git checkout -b gh-pages
+git push -u origin gh-pages

@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer {
+    display: block;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+img {
+  border: none;
+  max-width:100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+
+a,
+a:visited {
+    color: blue;
+    outline: none;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input {
+    vertical-align: middle;
+}
+
+/* Main */
+
+.main {
+    position: relative;
+    min-width: 320px;
+    min-height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
