@@ -47,6 +47,10 @@ $(function() {
 //-----------------------------------------------------------------------------
     $('input[placeholder], textarea[placeholder]').placeholder();
 
+    $('.js-slide-main').slick({
+        arrows: true,
+        dots: true
+    });
 
 });
 

@@ -1,0 +1,83 @@
+.slide-main
+  position: relative
+  &__item
+    position: relative
+    img
+      display: block
+      margin-left: auto
+      margin-right: auto
+  &__content
+    padding-left: 80px
+    padding-right: 80px
+    position: absolute
+    left: 0
+    right: 0
+    top: 132px
+  &__title
+    +FFRT
+    text-transform: uppercase
+    color: #3994ce
+    font-size: 48px
+    line-height: 48px
+    margin-bottom: 17px
+  &__desc
+    padding-left: 6px
+    p
+      font-size: 15px
+      line-height: 24px
+      padding-left: 5px
+      padding-right: 15px
+      display: inline-block
+      background: #fff
+      color: #383838
+  .slick-arrow
+    position: absolute
+    top: 220px
+    background: none
+    border: none
+    text-indent: -99999px
+    display: inline-block
+    z-index: 100
+    outline: none
+    &.slick-prev
+      left: 26px
+      @include sprite($sl-m-prev)
+    &.slick-next
+      right: 26px
+      @include sprite($sl-m-next)
+  .slick-dots
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 26px
+    display: block
+    text-align: center
+    li
+      list-style: none
+      padding: 0
+      margin: 0 7px
+      display: inline-block
+      width: 16px
+      height: 16px
+      vertical-align: middle
+      position: relative
+      button
+        text-indent: -9999px
+        width: 10px
+        height: 10px
+        background: none
+        display: inline-block
+        border-style: solid
+        border-width: 2px
+        border-color: rgb(194, 196, 194)
+        border-radius: 50%
+        position: relative
+      &.slick-active
+        button
+          text-indent: -9999px
+          width: 16px
+          height: 16px
+          top: -5px
+          background: none
+          border: none
+          background: #2db878

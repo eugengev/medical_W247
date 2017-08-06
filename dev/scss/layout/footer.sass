@@ -1,1 +1,104 @@
 .footer
+  margin-top: 5px
+  background: #e6ebf3
+  .header__menu
+    min-height: 51px
+    box-shadow: 0px 10px 16px 0px rgba(23, 123, 184, 0.41)
+    margin-bottom: 46px
+  .header__navmenu
+    float: none
+    ul
+      display: block
+      float: none
+      width: 100%
+      &:after
+        content: ''
+        clear: both
+        display: table
+      li
+        min-height: 51px
+        padding: 14px 35px 0 0
+        &:before
+          display: none
+        &:after
+          display: none
+        a
+          +FFRB
+          letter-spacing: 0.7px
+          font-size: 12px
+          text-transform: uppercase
+          border-bottom: #fff dotted 1px
+        &.right
+          float: right
+          padding-right: 0
+  &__copyright
+    border-top: #fff solid 1px
+    padding-top: 27px
+    min-height: 80px
+    color: #8f8f8f
+    +FFRl
+    font-size: 14px
+  &__razrab
+    float: right
+    a
+      text-decoration: none
+      +FFRR
+      color: #2db878
+
+  &__phone
+    float: left
+    padding-left: 57px
+    position: relative
+    min-height: 130px
+    width: 345px
+    +FFRl
+    color: #909aaa
+    font-size: 14px
+    &:before
+      content: ''
+      display: inline-block
+      @include sprite($phone-fot)
+      position: absolute
+      left: 2px
+      top: 0
+    a
+      display: block
+      margin-bottom: 1px
+      +FFRR
+      font-size: 18px
+      line-height: 18px
+      color: #4e4e4e
+      text-decoration: none
+      span
+        color: #2db878
+  &__adress
+    width: 330px
+    float: left
+    margin-top: -3px
+    +FFRl
+    font-size: 14px
+    line-height: 17px
+    padding-left: 45px
+    position: relative
+    &:before
+      content: ''
+      display: inline-block
+      @include sprite($local-fot)
+      position: absolute
+      left: 0px
+      top: 0
+    a
+      color: #1ca868
+      text-decoration: none
+  &__licenz
+    width: 256px
+    float: left
+    padding-left: 52px
+    position: relative
+    &:before
+      content: ''
+      display: inline-block
+      @include sprite($lice-fot)
+      position: absolute
+      left: 0px
+      top: 0
