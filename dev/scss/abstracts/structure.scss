@@ -17,8 +17,11 @@ footer {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-style: normal;
   font-size: 14px;
+  background: #f5f7fa;
 }
 
 img {
@@ -54,8 +57,15 @@ input {
     position: relative;
     min-width: 320px;
     min-height: 100%;
+  background: #f5f7fa;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+.container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
 }

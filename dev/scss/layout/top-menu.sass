@@ -1,0 +1,81 @@
+.header
+  &__menu
+    background: url(../images/top-menu.png) repeat-x left top
+    background-size: auto 100%
+    box-shadow: 0px 10px 16px 0px rgba(23, 123, 184, 0.41)
+    min-height: 63px
+  &__navmenu
+    display: block
+    float: left
+    ul
+      display: block
+      li
+        list-style: none
+        position: relative
+        float: left
+        padding-left: 21px
+        padding-top: 23px
+        padding-right: 21px
+        min-height: 63px
+        display: block
+        &:before
+          content: ''
+          position: absolute
+          left: 0
+          top: 0
+          display: block
+          float: left
+          width: 1px
+          height: 100%
+          background: url(../images/top-nav-ul-li.png) no-repeat
+        &:nth-child(1)
+          padding-left: 18px
+          padding-right: 23px
+        &:nth-last-child(1)
+          &:after
+            content: ''
+            position: absolute
+            right: 0
+            top: 0
+            display: block
+            float: left
+            width: 1px
+            height: 100%
+            background: url(../images/top-nav-ul-li.png) no-repeat
+        a
+          font-size: 14px
+          line-height: 14px
+          color: #fff
+          text-transform: uppercase
+          text-decoration: none
+          +FFRB
+        ul
+          display: none
+          position: absolute
+          min-width: 238px
+          background: #2cb575
+          left: 0
+          top: 100%
+          padding-top: 23px
+          padding-bottom: 22px
+          li
+            float: none
+            min-height: 35px
+            line-height: 35px
+            padding-left: 37px
+            padding-right: 37px
+            padding-top: 0
+            &:nth-child(1)
+              padding-top: 0
+              padding-left: 37px
+              padding-right: 37px
+        &:hover
+          background: #2cb575
+          ul
+            display: block
+            li:hover
+              background: #53b3ec
+  &__online
+    float: right
+    margin-top: 14px
+    max-width: 243px

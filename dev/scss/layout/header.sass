@@ -1,1 +1,121 @@
-.header 
+.main
+  background: #f5f7fa
+
+.header
+  background: #fff
+  &__top
+    background: #f0f4f9
+    min-height: 49px
+    &:after
+      content: ''
+      display: table
+      clear: both
+  &__reg-enter
+    float: left
+    margin-top: 17px
+    height: 15px
+    font-size: 14px
+    line-height: 13px
+    color: #5e5d61
+    width: 324px
+    a
+      color: #2db878
+      text-decoration: none
+  &__enter
+    display: inline-block
+    margin-right: 5px
+    &:before
+      content: ''
+      display: block
+      float: left
+      margin-right: 7px
+      @include sprite($enter-icon)
+  &__reg
+    display: inline-block
+    margin-left: 9px
+    &:before
+      content: ''
+      display: block
+      float: left
+      margin-right: 5px
+      @include sprite($reg-icon)
+  &__search
+    background: #ffffff
+    margin-top: 9px
+    height: 29px
+    float: left
+    width: 243px
+    &:after
+      content: ''
+      display: table
+      clear: both
+    &-inp
+      width: 213px
+      padding: 0 12px
+      font-size: 14px
+      color: #474747
+      height: 29px
+      background: none
+      border: none
+      float: left
+      +FFRl
+    &-sbm
+      float: left
+      display: inline-block
+      width: 30px
+      height: 30px
+      border: none
+      background: url("../images/sbm-bg.png") no-repeat
+      cursor: pointer
+  &__phone-block
+    float: right
+    margin: 8.5px 0
+    color: #909aaa
+    +FFRl
+    font-size: 14px
+    line-height: 32px
+    &.center
+      float: left
+      height: 38px
+      line-height: 38px
+      margin: 15px 0
+      &:before
+        content: ''
+        display: block
+        float: left
+        margin-right: 18px
+        @include sprite($phone-header-icon)
+  &__phone
+    display: inline-block
+    line-height: 29px
+    +FFRSR
+    margin-right: 16px
+    color: #4e4e4e
+    font-size: 18px
+    text-decoration: none
+    span
+      color: #2db878
+  &__center
+    margin-top: 16px
+    margin-bottom: 8px
+    &:after
+      content: ''
+      display: block
+      clear: both
+  &__logo
+    float: left
+    width: 132px
+  &__title_block
+    float: left
+  &__title
+    font-size:  18px
+    color: #3d99d1
+    margin-top: 10px
+    line-height: 20px
+    font-weight: normal
+    letter-spacing: -0.1px
+  &__rosteh
+    margin-top: -8px
+    float: right
+    width: 162px
+    text-align: right
