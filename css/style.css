@@ -130,7 +130,9 @@ body { background: #f5f7fa; color: #3d3d3d; font-size: 14px; }
 
 .tabs-list__nav-tab li.active a { color: #3d99d1; }
 
-.tabs-list__tab { padding: 43px 50px 26px; color: #3286ba; font-size: 14px; line-height: 15px; }
+.tabs-list__tab { display: none; padding: 43px 50px 26px; color: #3286ba; font-size: 14px; line-height: 15px; }
+
+.tabs-list__tab.active { display: block; }
 
 .tabs-list__tab .w50p { width: 50%; display: block; float: left; padding-left: 4px; }
 

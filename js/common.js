@@ -52,6 +52,17 @@ $(function() {
         dots: true
     });
 
+    $('a[data-toggle="tab"]').click(function(){
+        var idblock = $(this).attr('href');
+
+        $(this).parents('div[role="tabpanel"]').find('ul[role="tablist"]').find('li').removeClass('active');
+        $(this).parents('div[role="tabpanel"]').find('div[role="tabpanel"]').removeClass('active');
+
+        $(this).parents('li[role="presentation"]').addClass('active');
+        $(idblock).addClass('active');
+        return false;
+    });
+
 });
 
 var map;
