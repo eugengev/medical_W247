@@ -1,0 +1,27 @@
+.breadcrumb
+  padding-left: 2px
+  padding-top: 26px
+  padding-bottom: 26px
+  @media (max-width: 1023px)
+    display: none
+  ul
+    display: block
+    &:after
+      content: ''
+      display: table
+      clear: both
+    li
+      float: left
+      list-style: none
+      display: block
+      font-size: 12px
+      +FFRR
+      color: #2fb97a
+      a
+        color: #404040
+        text-decoration: none
+        &:after
+          content: '›'
+          display: inline-block
+          padding-left: 9px
+          padding-right: 8px

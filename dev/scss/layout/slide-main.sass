@@ -1,5 +1,9 @@
 .slide-main
   position: relative
+  .container
+    @media (max-width: 1023px)
+      padding-left: 0
+      padding-right: 0
   &__item
     position: relative
     img
@@ -13,6 +17,11 @@
     left: 0
     right: 0
     top: 132px
+    @media (max-width: 1023px)
+      top: 32px
+      left: 0
+      padding-left: 15px
+      padding-right: 15px
   &__title
     +FFRT
     text-transform: uppercase
@@ -20,8 +29,23 @@
     font-size: 48px
     line-height: 48px
     margin-bottom: 17px
+    @media (max-width: 1023px)
+      font-size: 15.39px
+      line-height: 16px
+      margin-bottom: 10px
+  &__link
+    display: none
+    @media (max-width: 1023px)
+      display: block
+      .btn
+        height: 30px
+        border: none
+        line-height: 30px
+        padding: 0 17px
   &__desc
     padding-left: 6px
+    @media (max-width: 1023px)
+      display: none
     p
       font-size: 15px
       line-height: 24px
@@ -52,6 +76,8 @@
     bottom: 26px
     display: block
     text-align: center
+    @media (max-width: 1023px)
+      bottom: 8px
     li
       list-style: none
       padding: 0

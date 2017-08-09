@@ -1,0 +1,62 @@
+.header-mobile
+  display: none
+  &__top
+    background: -moz-linear-gradient(90deg, #348DCA 0, #4AA2D5 78%)
+    background: -webkit-gradient(linear, 90deg, color-stop(0, 348DCA), color-stop(78%, 4AA2D5))
+    background: -webkit-linear-gradient(90deg, #348DCA 0, #4AA2D5 78%)
+    background: -o-linear-gradient(90deg, #348DCA 0, #4AA2D5 78%)
+    background: -ms-linear-gradient(90deg, #348DCA 0, #4AA2D5 78%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1')
+    background: linear-gradient(90deg, #348DCA 0, #4AA2D5 78%)
+    box-shadow: 0px 10px 16px 0px rgba(23, 123, 184, 0.41)
+    position: relative
+    z-index: 50
+  @media (max-width: 1023px)
+    display: block
+  &__logo
+    float: left
+    width: 69px
+    height: 63px
+    background: #ffffff
+    padding-left: 15px
+    padding-top: 8px
+    img
+      display: block
+  &__btn-mobile
+    position: absolute
+    right: 17px
+    top: 19px
+    display: inline-block
+    border: none
+    background: none
+    @include sprite($mobil-menu-icon)
+    cursor: pointer
+  &__phone-block
+    float: left
+    margin: 16px 0 0 23px
+    padding-left: 31px
+    line-height: 16px
+    position: relative
+    +FFRl
+    font-size: 14px
+    color: #ffffff
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      display: inline-block
+      @include sprite($phone-mobile-icon)
+    a
+      +FFRR
+      color: #ffffff
+      text-decoration: none
+      display: block
+  &__buton
+    position: relative
+    z-index: 5
+    padding: 16px 15px 10px
+    background: #ffffff
+    .btn
+      width: 100%
+      padding-right: 38px

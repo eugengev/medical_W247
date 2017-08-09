@@ -33,7 +33,7 @@
         <div class="container">
             <nav elem="navmenu">
                 <ul>
-                    <li><a href="#">Услуги</a></li>
+                    <li><a href="sub1.html">Услуги</a></li>
                     <li><a href="#">Цены</a>
                         <ul>
                             <li><a href="#">прайс-лист</a></li>
@@ -51,8 +51,47 @@
                 </ul>
             </nav>
             <div elem="online">
-                <a href="#" class="btn btn__online">записаться онлайн</a>
+                <a href="#ordercall" rel="modal:open" class="btn btn__online">записаться онлайн</a>
             </div>
         </div>
+    </div>
+    <div block="header-mobile">
+        <div class="row" elem="top">
+            <div elem="logo">
+                <a href="#"><img src="./images/logo-mobile.png" alt=""></a>
+            </div>
+            <div elem="phone-block">
+                <a href="tel:84984812295" elem="phone">8 <span>(498)</span> 481-22-95</a> Многоканальный
+            </div>
+            <button elem="btn-mobile" class="js-btn-mobile-menu"></button>
+        </div>
+        <div class="container" elem="buton">
+            <a  href="#ordercall" rel="modal:open" class="btn btn__online">записаться онлайн</a>
+        </div>
+    </div>
+    <div block="mobile-menu" class="js-mobile-menu">
+        <div class="header__search">
+            <input type="text" class="header__search-inp" placeholder="Поиск">
+            <input type="submit" class="header__search-sbm" value="">
+        </div>
+        <nav class="header__navmenu">
+            <ul>
+                <li><a href="sub1.html">Услуги</a></li>
+                <li><a href="#">Цены</a>
+                    <ul>
+                        <li><a href="#">прайс-лист</a></li>
+                        <li><a href="#">программы</a></li>
+                        <li><a href="#">Диагностика</a></li>
+                        <li><a href="#">стоматология</a></li>
+                        <li><a href="#">реабилитация</a></li>
+                        <li><a href="#">стационар</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Специалисты</a></li>
+                <li><a href="#">Клиника</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
     </div>
 </header>

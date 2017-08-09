@@ -1,0 +1,62 @@
+.modalbgblock
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  background: rgba(0, 0, 0, 0.51)
+  z-index: 150
+
+.modal
+  display: none
+  z-index: 155
+  position: fixed
+  top: 49px
+  left: 50%
+  width: 434px
+  margin-left: -217px
+  background-color: rgb(240, 244, 249)
+  box-shadow: 0px 2px 68px 0px rgba(0, 0, 0, 0.4)
+  padding: 18px 30px
+  h2:after
+    margin-bottom: 25px
+  @media (max-width: 1023px)
+    padding-left: 12px
+    padding-right: 12px
+    top: 65px
+    width: 320px
+    margin-left: -160px
+
+.form
+  &__control
+    padding-bottom: 10px
+  &__inp
+    width: 100%
+    height: 29px
+    background: #fff
+    +FFRl
+    font-size: 14px
+    color: #474747
+    border: none
+    padding-left: 10px
+    padding-right: 10px
+  &__area
+    height: 88px
+    background: #ffffff
+    width: 100%
+    border: none
+    +FFRl
+    font-size: 14px
+    color: #474747
+    padding: 5px 10px
+  &__submit
+    border: none
+    margin-left: auto
+    margin-right: auto
+    display: block
+    min-width: 255px
+    margin-top: 11px
+    text-align: center
+    padding-right: 53px
+    @media (max-width: 1023px)
+      width: 100%

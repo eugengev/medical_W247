@@ -49,7 +49,15 @@ $(function() {
 
     $('.js-slide-main').slick({
         arrows: true,
-        dots: true
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1023,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
     });
 
     $('a[data-toggle="tab"]').click(function(){
@@ -62,6 +70,26 @@ $(function() {
         $(idblock).addClass('active');
         return false;
     });
+
+    $('.js-btn-mobile-menu').click(function () {
+        var el = $('.js-mobile-menu');
+        if (el.css('display') == 'none') {
+            el.slideDown();
+        } else {
+            el.slideUp();
+        }
+    });
+
+    $('.js-serv-list').click(function () {
+        var el = $(this).parents('h4').next('ul');
+
+        if (el.css('display') == 'none') {
+            el.slideDown();
+        } else {
+            el.slideUp();
+        }
+    });
+
 
 });
 
@@ -85,3 +113,53 @@ function initMap() {
     });
 }
 
+
+
+
+$(document).on('click.modal', 'a[rel="modal:close"]', function(event) {
+    // event.preventDefault();
+    var modalBlock = $(this).parents('.modall');
+    $('.modalbgblock').remove();
+    modalBlock.find('.close-modal').remove();
+    modalBlock.hide();
+});
+
+$(document).on('click.modal', '.modalbgblock', function(event) {
+    event.preventDefault();
+    var idHref = $(this).data('modalblock'),
+        modalBlock = $(idHref);
+    $('.modalbgblock').remove();
+    modalBlock.find('.close-modal').remove();
+    modalBlock.hide();
+});
+
+$(document).on('click.modal', 'a[rel="modal:open"]', function(event) {
+    event.preventDefault();
+    /*skull    */
+    var $self = $(this),
+        $parentItem = $self.parents('.slide-costum__item');
+    if ($parentItem.find('.js-skul').length > 0) {
+        var skul = $parentItem.find('.js-skul').text();
+        $('#your-skul').val(skul);
+    }
+
+
+    if ($('.modalbgblock').length > 0 ) {
+        var idHref = $('.modalbgblock').data('modalblock'),
+            modalBlock = $(idHref);
+
+        $('.modalbgblock').remove();
+        modalBlock.find('.close-modal').remove();
+        modalBlock.hide();
+    }
+    var bgModal = $('<span class="modalbgblock"></span>'),
+        modalClose = $('<a href="#close-modal" rel="modal:close" class="close-modal"></a>'),
+        idHref = $(this).attr('href'),
+        formSend = $(this).data('formsend'),
+        modalBlock = $(idHref);
+
+    bgModal.data('modalblock',idHref);
+    $('body').append(bgModal);
+    modalBlock.append(modalClose);
+    modalBlock.show();
+});

@@ -1,0 +1,61 @@
+.service-list
+  padding-bottom: 41px
+  @media (max-width: 1023px)
+    padding-bottom: 6px
+  h3
+    color: #4b4e4b
+    font-size: 24px
+    text-transform: uppercase
+    +FFRSR
+    padding-bottom: 19px
+    @media (max-width: 1023px)
+      line-height: 25px
+  ul
+    display: block
+    &:after
+      content: ''
+      display: table
+      clear: both
+    li
+      width: 50%
+      float: left
+      list-style: none
+      display: block
+      @media (max-width: 1023px)
+        float: none
+        width: auto
+      &:nth-child(2n)
+        padding-left: 15px
+        @media (max-width: 1023px)
+          padding-left: 0
+      h4
+        +FFRB
+        font-size: 14px
+        line-height: 15px
+        text-transform: uppercase
+        color: #3690cb
+        padding-bottom: 17px
+        a
+          color: #3690cb
+          letter-spacing: 0.5px
+      ul
+        display: none
+        @media (max-width: 1023px)
+          padding-top: 15px
+        li
+          width: 100%
+          font-size: 14px
+          color: #4e4e4e
+          line-height: 15px
+          padding-left: 15px
+          padding-bottom: 15px
+          position: relative
+          &:before
+            content: ''
+            display: inline-block
+            @include sprite($serv-li)
+            position: absolute
+            left: 1px
+            top: 3px
+          &:nth-child(2n)
+            padding-left: 15px

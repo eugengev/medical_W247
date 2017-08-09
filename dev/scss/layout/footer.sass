@@ -38,12 +38,17 @@
     color: #8f8f8f
     +FFRl
     font-size: 14px
+    @media (max-width: 1023px)
+      padding-top: 15px
+      display: none
   &__razrab
     float: right
     a
       text-decoration: none
       +FFRR
       color: #2db878
+    @media (max-width: 1023px)
+      display: none
 
   &__phone
     float: left
@@ -61,6 +66,12 @@
       position: absolute
       left: 2px
       top: 0
+    @media (max-width: 1023px)
+      width: 250px
+      float: none
+      min-height: 50px
+      margin-left: auto
+      margin-right: auto
     a
       display: block
       margin-bottom: 1px
@@ -90,6 +101,12 @@
     a
       color: #1ca868
       text-decoration: none
+    @media (max-width: 1023px)
+      float: none
+      width: 234px
+      margin-top: 20px
+      margin-left: auto
+      margin-right: auto
   &__licenz
     width: 256px
     float: left
@@ -102,3 +119,21 @@
       position: absolute
       left: 0px
       top: 0
+    @media (max-width: 1023px)
+      width: 238px
+      margin-top: 34px
+      margin-left: auto
+      margin-right: auto
+      float: none
+      padding-bottom: 45px
+  @media (max-width: 1023px)
+    .header__menu
+      display: block
+      margin-bottom: 33px
+      .header__navmenu
+        li
+          display: none
+          &.right
+            display: block
+            float: none
+            text-align: center
