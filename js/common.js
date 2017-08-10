@@ -78,6 +78,7 @@ $(function() {
         } else {
             el.slideUp();
         }
+        return false;
     });
 
     $('.js-serv-list').click(function () {
@@ -88,6 +89,7 @@ $(function() {
         } else {
             el.slideUp();
         }
+        return false;
     });
 
 
