@@ -215,7 +215,7 @@ body { background: #f5f7fa; color: #3d3d3d; font-size: 14px; }
 
 .tabs-list__tab .w50p li { list-style: none; padding-left: 15px; position: relative; margin-bottom: 30px; }
 
-.tabs-list__tab .w50p li:before { content: ''; position: absolute; left: 0; top: 7px; background-image: url(../images/sprite.png); background-position: -178px -111px; width: 5px; height: 8px; }
+.tabs-list__tab .w50p li:before { content: ''; position: absolute; left: 0; top: 7px; background-image: url(../images/sprite.png); background-position: -178px -96px; width: 5px; height: 8px; }
 
 @media (max-width: 1023px) { .tabs-list__tab .w50p li:before { top: 2px; } }
 
@@ -412,8 +412,68 @@ h2:after { content: ''; display: block; height: 4px; margin-top: 9px; background
 
 .service-list ul li ul li { width: 100%; font-size: 14px; color: #4e4e4e; line-height: 15px; padding-left: 15px; padding-bottom: 15px; position: relative; }
 
-.service-list ul li ul li:before { content: ''; display: inline-block; background-image: url(../images/sprite.png); background-position: -178px -96px; width: 5px; height: 8px; position: absolute; left: 1px; top: 3px; }
+.service-list ul li ul li:before { content: ''; display: inline-block; background-image: url(../images/sprite.png); background-position: -178px -111px; width: 5px; height: 8px; position: absolute; left: 1px; top: 3px; }
 
 .service-list ul li ul li:nth-child(2n) { padding-left: 15px; }
+
+.info-spec { margin-bottom: 36px; }
+
+.info-spec:after { content: ''; display: block; clear: both; }
+
+.info-spec h2 { line-height: 49px; }
+
+.info-spec h2:after { margin-top: 2px; margin-bottom: 37px; }
+
+.info-spec__foto { max-width: 242px; float: left; }
+
+.info-spec__text { margin-left: 275px; font-size: 14px; line-height: 24px; color: #3d3d3d; font-family: 'Roboto'; font-weight: normal; font-style: normal; }
+
+.priem__title { font-size: 24px; color: #0b0b0b; font-family: 'Roboto'; font-weight: 300; font-style: normal; text-align: center; background: url(../images/h3-bg.jpg) repeat-x center; margin-bottom: 36px; }
+
+.priem__title span { display: inline-block; background: #ffffff; padding-left: 32px; padding-right: 32px; }
+
+.priem__item { margin-bottom: 55px; }
+
+.priem__item:after { content: ''; display: table; clear: both; }
+
+.priem__item-number { float: left; font-size: 60px; line-height: 48px; vertical-align: top; font-family: 'Roboto'; font-weight: 100; font-style: normal; color: #b3b3b3; }
+
+.priem__item-text { margin-left: 83px; font-size: 14px; font-family: 'Roboto'; font-weight: normal; font-style: normal; line-height: 18px; }
+
+.priem__item-title { font-size: 14px; font-family: 'Roboto'; font-weight: bold; font-style: normal; color: #47a4de; text-transform: uppercase; margin-bottom: 10px; }
+
+.doc-info { margin-top: 15px; padding-bottom: 36px; }
+
+.doc-info:after { content: ''; display: table; clear: both; }
+
+.doc-info__left { float: left; width: 314px; }
+
+.doc-info__right { margin-left: 337px; }
+
+.doc-info__foto { margin-bottom: 13px; }
+
+.doc-info__foto img { border: #e5e8ec solid 1px; }
+
+.doc-info .form { background: #f0f4f9; padding: 16px 16px 10px 16px; margin-bottom: 25px; }
+
+.doc-info .form h2:after { margin-bottom: 20px; }
+
+.doc-info .form__control { padding-bottom: 12px; }
+
+.doc-info .form__submit { margin-top: 2px; }
+
+.doc-info .form__imp { padding-left: 14px; }
+
+.doc-info__title { font-family: 'Roboto Slab'; font-weight: normal; font-style: normal; color: #4b4e4b; line-height: 24px; letter-spacing: -2.7px; margin-bottom: 27px; }
+
+.doc-info__info { font-size: 14px; color: #3d3d3d; line-height: 18px; padding-bottom: 19px; }
+
+.doc-info__info-title { padding-top: 15px; padding-bottom: 15px; text-transform: uppercase; font-family: 'Roboto'; font-weight: bold; font-style: normal; color: #47a4de; font-size: 14px; }
+
+.doc-info__all-spec { margin-left: 55px; font-size: 14px; color: #2fb97a; display: block; height: 22px; line-height: 22px; text-transform: uppercase; font-family: 'Roboto'; font-weight: bold; font-style: normal; text-decoration: none; }
+
+.doc-info__all-spec span { border-bottom: #2fb97a dotted 1px; letter-spacing: 0.9px; }
+
+.doc-info__all-spec:before { content: ''; background-image: url(../images/sprite.png); background-position: -27px -101px; width: 26px; height: 22px; display: inline-block; float: left; margin-right: 14px; }
 
 /*# sourceMappingURL=style.css.map */
