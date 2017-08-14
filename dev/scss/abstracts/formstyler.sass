@@ -1,0 +1,77 @@
+.jq-selectbox,
+.jq-select-multiple
+  display: inline-block
+  position: relative
+  select
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    margin: 0
+    padding: 0
+    opacity: 0
+  li
+    user-select: none
+    white-space: nowrap
+
+.jq-selectbox
+  background: #ffffff
+  width: 100%
+  height: 29px
+  line-height: 29px
+  z-index: 10
+  &__select
+    position: relative
+  &__select-text
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+    user-select: none
+    width: 100%
+    color: #474747
+    padding-left: 11px
+  &__trigger
+    position: absolute
+    right: 0
+    top: 0
+    bottom: 0
+    width: 30px
+    background: #27b06e
+    cursor: pointer
+    &-arrow
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      display: inline-block
+      @include sprite($select-arrow)
+  &__dropdown
+    position: absolute
+  &__search
+    input
+      -webkit-appearance: textfield
+      &::-webkit-search-cancel-button
+      &::-webkit-search-decoration
+          -webkit-appearance: none
+  &__dropdown
+    background: #fff
+    padding: 10px
+    right: 0
+    left: 0
+    ul
+        position: relative
+        list-style: none
+        overflow: auto
+        overflow-x: hidden
+        -webkit-overflow-scrolling: touch
+        li
+          cursor: pointer
+          &:hover
+            color: #27b06e
+
+.jq-select-multiple
+  ul
+    position: relative
+    overflow-x: hidden
+    -webkit-overflow-scrolling: touch

@@ -1,0 +1,80 @@
+.news-one
+  padding-bottom: 37px
+  &:after
+    content: ''
+    display: table
+    clear: both
+  &__top
+    &:after
+      content: ''
+      display: table
+      clear: both
+  &__date
+    float: left
+    width: 102px
+    height: 101px
+    background: url(../images/date-bg.png) no-repeat
+    text-align: center
+    font-size: 12px
+    line-height: 14.19px
+    color: #ffffff
+    padding: 4px 17px 24px 14px
+    span
+      margin-top: 4px
+      font-size: 36px
+      line-height: 36px
+      display: block
+      margin-bottom: 5px
+      +FFRSB
+    margin-left: -12px
+    margin-top: -2px
+  &__title
+    font-size: 24px
+    color: #4b4e4b
+    +FFRSR
+    line-height: 24px
+    margin-left: 112px
+    margin-top: 5px
+  &__content
+    font-size: 14px
+    color: #3d3d3d
+    line-height: 24px
+    p
+      padding-top: 5px
+      padding-bottom: 20px
+  &__pic
+    float: left
+    margin-right: 38px
+    margin-bottom: 25px
+  &__link
+    float: right
+  &__but
+    padding-top: 15px
+    &:after
+      content: ''
+      display: table
+      clear: both
+    .btn
+      width: 243px
+  .soc-link
+    float: left
+
+.soc-link
+  a
+    display: block
+    float: left
+    width: 40px
+    height: 40px
+    margin-right: 10px
+  &__fb
+    @include sprite($fb-icon)
+  &__tw
+    @include sprite($tw-icon)
+  &__gp
+    @include sprite($gp-icon)
+  &__p
+    @include sprite($p-icon)
+  &__in
+    @include sprite($in-icon)
+  &__vk
+    @include sprite($vk-icon)

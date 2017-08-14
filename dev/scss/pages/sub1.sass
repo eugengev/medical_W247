@@ -59,3 +59,35 @@
             top: 3px
           &:nth-child(2n)
             padding-left: 15px
+  &.one
+    ul
+      li
+        width: 100%
+        &:nth-child(2n)
+          padding-left: 0
+        ul li:nth-child(2n)
+          padding-left: 15px
+      .price
+        display: none
+        padding-top: 33px
+        padding-bottom: 28px
+        font-size: 14px
+        line-height: 15px
+        color: #4e4e4e
+        +FFRl
+        tr
+          td
+            padding-bottom: 14px
+          td:nth-last-child(1)
+            +FFRB
+            font-size: 14px
+            color: #000000
+    ul
+      li
+        ul
+          li
+            cursor: pointer
+            &:hover
+              color: #34b076
+              &:before
+                @include sprite($serv-li-hover)

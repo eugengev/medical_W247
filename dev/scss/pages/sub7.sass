@@ -1,0 +1,138 @@
+#map
+  height: 491px
+.maps
+  padding-bottom: 27px
+  margin-top: -12px
+
+
+.contact
+  margin-top: -6px
+  margin-left: 1px
+  &:after
+    content: ''
+    display: table
+    clear: both
+  &__left
+    width: 314px
+    float: left
+  .form
+    background: #f0f4f9
+    padding: 16px 16px 10px 16px
+    margin-bottom: 25px
+    h2:after
+      margin-bottom: 20px
+    &__control
+      padding-bottom: 12px
+    &__submit
+      margin-top: 2px
+      width: 100%
+    &__imp
+      padding-left: 14px
+  &__right
+    float: left
+    padding-top: 20px
+    margin-left: 120px
+    max-width: 400px
+    table
+      width: 100%
+      tr
+        td
+          padding-bottom: 11px
+        td:nth-child(1)
+          width: 149px
+          vertical-align: top
+    .phone
+      font-size: 18px
+      line-height: 29px
+      +FFRSR
+      color: #4e4e4e
+      span
+        color: #2db878
+    .skype
+      font-size: 15px
+      color: #3d526c
+      +FFRl
+      text-decoration: none
+    .email
+      font-size: 15px
+      color: #56cd53
+      +FFRl
+      text-decoration: none
+    .adres
+      font-size: 14px
+      color: #4e4e4e
+      line-height: 17px
+      a
+        color: #1ca868
+        text-decoration: none
+
+
+.icon_phone
+  line-height: 25px
+  height: 25px
+  font-size: 14px
+  color: #3f5168
+  +FFRM
+  display: block
+  padding-left: 37px
+  position: relative
+  text-transform: uppercase
+  &:before
+    content: ''
+    display: inline-block
+    position: absolute
+    left: 0
+    top: 0
+    @include sprite($phone-icon)
+.icon_skype
+  line-height: 23px
+  height: 23px
+  font-size: 14px
+  color: #3f5168
+  +FFRM
+  display: block
+  padding-left: 39px
+  position: relative
+  text-transform: uppercase
+  &:before
+    content: ''
+    display: inline-block
+    position: absolute
+    left: 0
+    top: 0
+    @include sprite($skype-icon)
+.icon_email
+  line-height: 21px
+  height: 21px
+  font-size: 14px
+  color: #3f5168
+  +FFRM
+  display: block
+  padding-left: 39px
+  position: relative
+  text-transform: uppercase
+  &:before
+    content: ''
+    display: inline-block
+    position: absolute
+    left: 0
+    top: 0
+    @include sprite($email-icon)
+
+.icon_adres
+  line-height: 25px
+  height: 28px
+  font-size: 14px
+  color: #3f5168
+  +FFRM
+  display: block
+  padding-left: 39px
+  position: relative
+  text-transform: uppercase
+  &:before
+    content: ''
+    display: inline-block
+    position: absolute
+    left: 0
+    top: 0
+    @include sprite($local-icon)
