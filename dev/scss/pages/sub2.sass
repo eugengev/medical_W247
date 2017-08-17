@@ -1,5 +1,7 @@
 .info-spec
   margin-bottom: 36px
+  @media (max-width: 640px)
+    margin-top: -18px
   &:after
     content: ''
     display: block
@@ -9,15 +11,25 @@
     &:after
       margin-top: 2px
       margin-bottom: 37px
+      @media (max-width: 640px)
+        margin-bottom: 20px
   &__foto
     max-width: 242px
     float: left
+    @media (max-width: 640px)
+      float: none
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 30px
   &__text
     margin-left: 275px
     font-size: 14px
     line-height: 24px
     color: #3d3d3d
     +FFRR
+    @media (max-width: 640px)
+      margin-left: 0
+      font-size: 15px
 
 .priem
   &__title
@@ -27,13 +39,21 @@
     text-align: center
     background: url(../images/h3-bg.jpg) repeat-x center
     margin-bottom: 36px
+    @media (max-width: 640px)
+      background: none
+      margin-bottom: 10px
     span
       display: inline-block
       background: #ffffff
       padding-left: 32px
       padding-right: 32px
+      @media (max-width: 640px)
+        padding-left: 0
+        padding-right: 0
   &__item
     margin-bottom: 55px
+    @media (max-width: 640px)
+      margin-bottom: 20px
     &:after
       content: ''
       display: table
@@ -45,11 +65,17 @@
       vertical-align: top
       +FFRT
       color: #b3b3b3
+      @media (max-width: 640px)
+        float: none
+        text-align: center
+        padding-bottom: 27px
     &-text
       margin-left: 83px
       font-size: 14px
       +FFRR
       line-height: 18px
+      @media (max-width: 640px)
+        margin-left: 0
     &-title
       font-size: 14px
       +FFRB

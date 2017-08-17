@@ -131,9 +131,12 @@ h2
       margin-top: 3px
   &.inner
     padding-bottom: 25px
+    margin-top: -7px
     .news-list__item
       padding-left: 0
       margin-bottom: 28px
+      @media  (max-width: 640px)
+        margin-bottom: 20px
     .news-list__item-date
       position: relative
       left: -14px
@@ -143,3 +146,11 @@ h2
       padding-top: 32px
       .btn
         width: 243px
+    .news-list__item-pic
+      @media  (max-width: 640px)
+        float: none
+        max-width: 199px
+        margin-left: 38px
+        padding-top: 5px
+        padding-right: 0
+        padding-bottom: 14px

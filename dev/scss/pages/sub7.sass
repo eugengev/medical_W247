@@ -3,6 +3,11 @@
 .maps
   padding-bottom: 27px
   margin-top: -12px
+  @media  (max-width: 768px)
+    margin-top: -4px
+    margin-left: 15px
+    margin-right: 15px
+    padding-bottom: 21px
 
 
 .contact
@@ -15,6 +20,8 @@
   &__left
     width: 314px
     float: left
+    @media  (max-width: 768px)
+      display: none
   .form
     background: #f0f4f9
     padding: 16px 16px 10px 16px
@@ -28,11 +35,20 @@
       width: 100%
     &__imp
       padding-left: 14px
+    @media  (max-width: 768px)
+      margin-top: 18px
+      margin-left: -15px
+      margin-right: -15px
+      margin-bottom: -20px
   &__right
     float: left
     padding-top: 20px
     margin-left: 120px
     max-width: 400px
+    @media  (max-width: 768px)
+      float: none
+      margin-left: 0
+      padding-top: 0
     table
       width: 100%
       tr
@@ -41,6 +57,8 @@
         td:nth-child(1)
           width: 149px
           vertical-align: top
+          @media  (max-width: 768px)
+            width: 127px
     .phone
       font-size: 18px
       line-height: 29px
@@ -65,6 +83,10 @@
       a
         color: #1ca868
         text-decoration: none
+  .show-mobile
+    display: none
+    @media  (max-width: 768px)
+      display: block
 
 
 .icon_phone
@@ -136,3 +158,9 @@
     left: 0
     top: 0
     @include sprite($local-icon)
+
+.white-block.nobg
+  @media  (max-width: 768px)
+    border: none
+    background: none
+    box-shadow: none

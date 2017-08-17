@@ -1,5 +1,7 @@
 .news-one
   padding-bottom: 37px
+  @media (max-width: 640px)
+    padding-bottom: 17px
   &:after
     content: ''
     display: table
@@ -28,6 +30,8 @@
       +FFRSB
     margin-left: -12px
     margin-top: -2px
+    @media (max-width: 640px)
+      display: none
   &__title
     font-size: 24px
     color: #4b4e4b
@@ -35,6 +39,11 @@
     line-height: 24px
     margin-left: 112px
     margin-top: 5px
+    @media (max-width: 640px)
+      margin-left: 0
+      font-size: 20px
+      margin-top: -5px
+      padding-bottom: 22px
   &__content
     font-size: 14px
     color: #3d3d3d
@@ -42,30 +51,51 @@
     p
       padding-top: 5px
       padding-bottom: 20px
+      @media (max-width: 640px)
+        padding-bottom: 18px
   &__pic
     float: left
     margin-right: 38px
     margin-bottom: 25px
+    @media (max-width: 640px)
+      margin-bottom: 18px
+      float: none
+      margin-right: 0px
   &__link
     float: right
+    @media (max-width: 640px)
+      float: none
   &__but
     padding-top: 15px
+    @media (max-width: 640px)
+      padding-top: 3px
     &:after
       content: ''
       display: table
       clear: both
     .btn
       width: 243px
+      @media (max-width: 640px)
+        width: 100%
   .soc-link
     float: left
+    @media (max-width: 640px)
+      float: none
+      padding-bottom: 27px
 
 .soc-link
+  &:after
+    content: ''
+    display: table
+    clear: both
   a
     display: block
     float: left
     width: 40px
     height: 40px
     margin-right: 10px
+    &:nth-last-child(1)
+      margin-right: 0
   &__fb
     @include sprite($fb-icon)
   &__tw
