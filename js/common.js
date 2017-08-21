@@ -290,7 +290,7 @@ function initMap() {
 
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
-        scrollwheel: false,
+        scrollwheel: true,
         center:  {lat: 49.4225715, lng: 26.9763337},  // Brooklyn.
         mapTypeControlOptions: {
             mapTypeIds: [google.maps.MapTypeId.ROADMAP]
